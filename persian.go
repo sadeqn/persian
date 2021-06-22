@@ -158,7 +158,6 @@ func FixArabic(text string) string {
 	).Replace(text)
 }
 
-
 //Normalize used for Normalize Persian for sort and equality check.
 //TODO: Complete list according to Persian Collation
 func Normalize(text string) string {
@@ -174,15 +173,14 @@ func Normalize(text string) string {
 		"‍", " ",
 		"‌", " ",
 		"ى", "ی",
-		"ٱ","ا" ,
-		"آ","ا" ,
-		"ء","ا" ,
-		"ئ","ی" ,
-		"أ","ا" ,
-		"ة","ه" ,
+		"ٱ", "ا",
+		"آ", "ا",
+		"ء", "ا",
+		"ئ", "ی",
+		"أ", "ا",
+		"ة", "ه",
 	).Replace(text)
 }
-
 
 //Reverse reverses the given string.
 func Reverse(s string) string {
